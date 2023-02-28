@@ -1,4 +1,4 @@
-package com.imooc.demo.config;
+package com.imooc.springbootdemo.config;
 
 import io.swagger.annotations.Api;
 import org.springframework.context.annotation.Bean;

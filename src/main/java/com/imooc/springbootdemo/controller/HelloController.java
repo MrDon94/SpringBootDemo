@@ -1,4 +1,4 @@
-package com.imooc.demo.controller;
+package com.imooc.springbootdemo.controller;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

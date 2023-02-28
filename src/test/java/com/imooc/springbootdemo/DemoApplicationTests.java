@@ -1,4 +1,4 @@
-package com.imooc.demo;
+package com.imooc.springbootdemo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

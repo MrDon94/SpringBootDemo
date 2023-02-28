@@ -1,4 +1,4 @@
-package com.imooc.demo;
+package com.imooc.springbootdemo;
 
 import org.junit.*;
 import org.junit.runner.RunWith;

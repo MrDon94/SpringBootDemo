@@ -1,4 +1,4 @@
-package com.imooc.demo.interceptor;
+package com.imooc.springbootdemo.interceptor;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;

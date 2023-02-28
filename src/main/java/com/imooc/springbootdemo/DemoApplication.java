@@ -1,8 +1,10 @@
-package com.imooc.demo;
+package com.imooc.springbootdemo;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+@MapperScan("com.imooc.springbootdemo.mapper")
 @SpringBootApplication
 public class DemoApplication {
 

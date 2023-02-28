@@ -1,6 +1,6 @@
-package com.imooc.demo.controller;
+package com.imooc.springbootdemo.controller;
 
-import com.imooc.demo.model.User;
+import com.imooc.springbootdemo.model.User;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
