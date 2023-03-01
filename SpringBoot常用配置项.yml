@@ -1,0 +1,76 @@
+spring:
+  # 数据源配置
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://127.0.0.1:3306/spring_boot
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    name: druid
+  druid:
+    # 初始化大小，最小，最大
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    # 配置获取连接等待超时的时间
+    maxWait: 60000
+    # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+    timeBetweenEvictionRunsMillis: 60000
+    # 配置一个连接在池中最小生存的时间，单位是毫秒
+    minEvictableIdleTimeMillis: 300000
+
+  # http请求
+  http:
+      #json序列化框架
+    converters:
+      preferred-json-mapper: fastjson
+    #上传文件、请求最大限制
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+
+  # Spring MVC配置
+  mvc:
+    dispatch-options-request: true
+    static-path-pattern: /**
+
+  # 激活环境配置
+  profiles:
+    active: local
+
+  # Redis配置
+  redis:
+    host: 127.0.0.1
+    port: 6379
+
+  # 应用名
+  application:
+    name: springboot
+
+# Redis客户端
+jedis:
+  pool:
+    host: 127.0.0.1
+    port: 6379
+
+# 线程池的配置文件
+threads:
+  pool:
+    queueCapacity: 50
+    corePoolSize: 20
+    maxPoolSize: 50
+    keepAliveSeconds: 600
+
+# 日志级别
+logging:
+  level: info
+
+# Web服务器
+server:
+  # 超时时间
+  session:
+    timeout: 60
+  # 端口
+  port: 8080
+  # 根路径
+  context-path: /springboot
